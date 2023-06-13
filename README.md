@@ -1,7 +1,7 @@
 # Crowdfunding_ETL
 This project involves analyzing crowdfunding data from Excel files, creating dataframes, exporting the dataframes as CSV files, creating a PostgreSQL database schema based on an ERD and importing the CSV files into their corresponding tables.
 
-# Create the Category and Subcategory DataFrames
+**Create the Category and Subcategory DataFrames**
 Extract and transform the crowdfunding.xlsx Excel dta to create a category DataFrame and a subcategory DataFrame
 
 Export the two DataFrames as category.csv and subcategory.csv
