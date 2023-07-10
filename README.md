@@ -8,14 +8,14 @@ This project involves analyzing crowdfunding data from Excel files, creating dat
 - Extracted and transformed data from the provided Excel files to create dataframes using Python and pandas.
 
 - Cleaned and formatted the data, handling missing values and inconsistencies.
-- 
+  
 <img width="902" alt="Screenshot 2023-07-10 at 12 34 55 PM" src="https://github.com/m-janssens-boop/Crowdfunding_ETL/assets/127706155/87743cc5-e8a1-49b2-89a4-770226cadaaa">
 
 - Exported the dataframes as CSV files: category.csv, subcategory.csv, campaign.csv, and contacts.csv.
 
 - Designed the database schema based on the Entity Relationship Diagram (ERD) provided.
 
-- <img width="1284" alt="Screenshot 2023-07-10 at 12 35 42 PM" src="https://github.com/m-janssens-boop/Crowdfunding_ETL/assets/127706155/aa8a16aa-728e-4492-8bd6-c2c69140e092">
+<img width="1284" alt="Screenshot 2023-07-10 at 12 35 42 PM" src="https://github.com/m-janssens-boop/Crowdfunding_ETL/assets/127706155/aa8a16aa-728e-4492-8bd6-c2c69140e092">
 
 - Created tables in PostgreSQL with appropriate data types, primary keys, foreign keys, and constraints.
 
