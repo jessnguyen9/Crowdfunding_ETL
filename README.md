@@ -28,7 +28,7 @@ For extracting specific data points like the "contact_id" from the contact infor
 * The cleaned and prepared data was imported into a PostgreSQL database, where SQL queries were used to perform deeper analysis, such as identifying trends, calculating success rates, and examining backer behavior.
 * The database was structured using foreign key relationships to ensure data integrity and optimize query performance. Analysis was conducted on multiple dimensions, including goals, pledged amounts, and campaign outcomes.
 ## ETL Process & Database Design
-After performing the data analysis, I designed and implemented an ETL (Extract, Transform, Load) pipeline to efficiently structure and store the cleaned data in a PostgreSQL database. The schema is structured to allow for easy querying and analysis across different dimensions such as campaigns, categories, subcategories, and contacts.
+After performing the data analysis, we designed and implemented an ETL (Extract, Transform, Load) pipeline to efficiently structure and store the cleaned data in a PostgreSQL database. The schema is structured to allow for easy querying and analysis across different dimensions such as campaigns, categories, subcategories, and contacts.
 
 <img width="1284" alt="Screenshot 2023-07-10 at 12 35 42 PM" src="https://github.com/m-janssens-boop/Crowdfunding_ETL/assets/127706155/aa8a16aa-728e-4492-8bd6-c2c69140e092">
 
