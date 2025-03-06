@@ -3,7 +3,24 @@
 ## Overview
 Conducted a thorough analysis of crowdfunding data, focusing on campaign performance, backer engagement, and funding success rates. The dataset, containing over 1,000 crowdfunding campaigns, was acquired from multiple sources, including Excel files. The project aimed to clean and transform the raw data, load it into a PostgreSQL database, and then analyze it to generate actionable insights for business stakeholders.
 
-## Completed Tasks
+## Techniques & Tools
+### Techniques
+1. **Data Acquisition**
+* Data was acquired from multiple sources, including Excel files containing crowdfunding campaign information and external APIs for contact information. Python libraries like pandas were utilized for reading and processing the data.
+2. **Data Preparation**
+* **Data Cleaning:** The data underwent various cleaning processes, including removing missing values, handling duplicates, and ensuring consistency in formatting.
+* **Data Manipulation:** Using pandas, the data was transformed by converting columns to appropriate data types (e.g., converting dates from Unix timestamps to human-readable formats) and creating new features (e.g., splitting the "category & sub-category" column into separate category and subcategory columns).
+* **Regex:** For extracting specific data points like the "contact_id" from the contact information, regex (regular expressions) was applied. This allowed for efficient extraction of the required details from nested JSON strings within the dataset.
+3. **Data Analytics**
+
+### Tools
+* **QuickDBD:** Used for designing the database schema visually and exporting the SQL code to create the database structure.
+* **Python (pandas, numpy):** pandas for data manipulation and cleaning; numpy for generating arrays and performing numeric operations.
+* **PostgreSQL:** Relational database for storing and querying the transformed data.
+* **Regex:** Extracted specific data (e.g., contact IDs) from unstructured text for further processing.
+* **Jupyter Notebooks:** Enabled interactive execution and debugging of Python code during data transformations.
+
+
 - Extracted and transformed data from the provided Excel files to create dataframes using Python and pandas.
 
 - Cleaned and formatted the data, handling missing values and inconsistencies.
