@@ -6,7 +6,7 @@ Conducted a thorough analysis of crowdfunding data, focusing on campaign perform
 ## Techniques & Tools
 ### Techniques
 1. **Data Acquisition**
-* Data was acquired from multiple sources, including Excel files containing crowdfunding campaign information and external APIs for contact information. Python libraries like pandas were utilized for reading and processing the data.
+Data was acquired from multiple sources, including Excel files containing crowdfunding campaign information and external APIs for contact information. Python libraries like pandas were utilized for reading and processing the data.
 2. **Data Preparation**
 **Data Cleaning:**
 * Identified and removed incomplete or missing values from the datasets. For instance, any campaigns with missing campaign outcomes or backer counts were handled to ensure data integrity.
@@ -18,7 +18,8 @@ Conducted a thorough analysis of crowdfunding data, focusing on campaign perform
 * Transformed various columns to the appropriate data types to facilitate analysis (e.g., converting goal and pledged amounts to float).
 * Created new features such as category_id and subcategory_id, which linked each campaign to a specific category and subcategory using a reference table.
 
-**Regex:** For extracting specific data points like the "contact_id" from the contact information, regex (regular expressions) was applied. This allowed for efficient extraction of the required details from nested JSON strings within the dataset.
+**Regex:** 
+For extracting specific data points like the "contact_id" from the contact information, regex (regular expressions) was applied. This allowed for efficient extraction of the required details from nested JSON strings within the dataset.
 3. **Data Analytics**
 
 ### Tools
