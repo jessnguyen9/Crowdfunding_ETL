@@ -8,9 +8,17 @@ Conducted a thorough analysis of crowdfunding data, focusing on campaign perform
 1. **Data Acquisition**
 * Data was acquired from multiple sources, including Excel files containing crowdfunding campaign information and external APIs for contact information. Python libraries like pandas were utilized for reading and processing the data.
 2. **Data Preparation**
-* **Data Cleaning:** The data underwent various cleaning processes, including removing missing values, handling duplicates, and ensuring consistency in formatting.
-* **Data Manipulation:** Using pandas, the data was transformed by converting columns to appropriate data types (e.g., converting dates from Unix timestamps to human-readable formats) and creating new features (e.g., splitting the "category & sub-category" column into separate category and subcategory columns).
-* **Regex:** For extracting specific data points like the "contact_id" from the contact information, regex (regular expressions) was applied. This allowed for efficient extraction of the required details from nested JSON strings within the dataset.
+**Data Cleaning:**
+* Identified and removed incomplete or missing values from the datasets. For instance, any campaigns with missing campaign outcomes or backer counts were handled to ensure data integrity.
+* Converted date columns (e.g., launch date and end date) from UNIX timestamp format to human-readable datetime formats.
+
+<img width="902" alt="Screenshot 2023-07-10 at 12 34 55 PM" src="https://github.com/m-janssens-boop/Crowdfunding_ETL/assets/127706155/87743cc5-e8a1-49b2-89a4-770226cadaaa">
+
+**Data Manipulation:** 
+* Transformed various columns to the appropriate data types to facilitate analysis (e.g., converting goal and pledged amounts to float).
+* Created new features such as category_id and subcategory_id, which linked each campaign to a specific category and subcategory using a reference table.
+
+**Regex:** For extracting specific data points like the "contact_id" from the contact information, regex (regular expressions) was applied. This allowed for efficient extraction of the required details from nested JSON strings within the dataset.
 3. **Data Analytics**
 
 ### Tools
@@ -25,7 +33,7 @@ Conducted a thorough analysis of crowdfunding data, focusing on campaign perform
 
 - Cleaned and formatted the data, handling missing values and inconsistencies.
   
-<img width="902" alt="Screenshot 2023-07-10 at 12 34 55 PM" src="https://github.com/m-janssens-boop/Crowdfunding_ETL/assets/127706155/87743cc5-e8a1-49b2-89a4-770226cadaaa">
+
 
 - Exported the dataframes as CSV files: category.csv, subcategory.csv, campaign.csv, and contacts.csv.
 
