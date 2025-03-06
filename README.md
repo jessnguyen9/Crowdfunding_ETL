@@ -8,6 +8,7 @@ Conducted a thorough analysis of crowdfunding data, focusing on campaign perform
 1. **Data Acquisition**
 
 Data was acquired from multiple sources, including Excel files containing crowdfunding campaign information and external APIs for contact information. Python libraries like pandas were utilized for reading and processing the data.
+
 2. **Data Preparation**
 **Data Cleaning:**
 * Identified and removed incomplete or missing values from the datasets. For instance, any campaigns with missing campaign outcomes or backer counts were handled to ensure data integrity.
@@ -22,7 +23,12 @@ Data was acquired from multiple sources, including Excel files containing crowdf
 **Regex:** 
 
 For extracting specific data points like the "contact_id" from the contact information, regex (regular expressions) was applied. This allowed for efficient extraction of the required details from nested JSON strings within the dataset.
+
 3. **Data Analytics**
+* The cleaned and prepared data was imported into a PostgreSQL database, where SQL queries were used to perform deeper analysis, such as identifying trends, calculating success rates, and examining backer behavior.
+* The database was structured using foreign key relationships to ensure data integrity and optimize query performance. Analysis was conducted on multiple dimensions, including goals, pledged amounts, and campaign outcomes.
+## ETL Process & Database Design
+After performing the data analysis, I designed and implemented an ETL (Extract, Transform, Load) pipeline to efficiently structure and store the cleaned data in a PostgreSQL database. The schema is structured to allow for easy querying and analysis across different dimensions such as campaigns, categories, subcategories, and contacts.
 
 ### Tools
 * **QuickDBD:** Used for designing the database schema visually and exporting the SQL code to create the database structure.
