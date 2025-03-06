@@ -30,6 +30,8 @@ For extracting specific data points like the "contact_id" from the contact infor
 ## ETL Process & Database Design
 After performing the data analysis, I designed and implemented an ETL (Extract, Transform, Load) pipeline to efficiently structure and store the cleaned data in a PostgreSQL database. The schema is structured to allow for easy querying and analysis across different dimensions such as campaigns, categories, subcategories, and contacts.
 
+<img width="1284" alt="Screenshot 2023-07-10 at 12 35 42 PM" src="https://github.com/m-janssens-boop/Crowdfunding_ETL/assets/127706155/aa8a16aa-728e-4492-8bd6-c2c69140e092">
+
 ### Tools
 * **QuickDBD:** Used for designing the database schema visually and exporting the SQL code to create the database structure.
 * **Python (pandas, numpy):** pandas for data manipulation and cleaning; numpy for generating arrays and performing numeric operations.
@@ -37,26 +39,12 @@ After performing the data analysis, I designed and implemented an ETL (Extract, 
 * **Regex:** Extracted specific data (e.g., contact IDs) from unstructured text for further processing.
 * **Jupyter Notebooks:** Enabled interactive execution and debugging of Python code during data transformations.
 
+## Challenges
+- **Handling Semi-Structured Data:** The contact information was stored as JSON-like strings within a single column. This format made it difficult to directly manipulate or analyze the data, as each entry was essentially a raw string rather than a fully parsed structure.
+- **Inconsistent Data:** Initially, the dataset had some inconsistencies, such as extra rows or non-standardized column headers. This required cleaning before the extraction of structured data.
+- **Missing or Invalid Data:** Some rows may have missing contact information or improperly formatted JSON.
 
-- Extracted and transformed data from the provided Excel files to create dataframes using Python and pandas.
-
-- Cleaned and formatted the data, handling missing values and inconsistencies.
-  
-
-
-- Exported the dataframes as CSV files: category.csv, subcategory.csv, campaign.csv, and contacts.csv.
-
-- Designed the database schema based on the Entity Relationship Diagram (ERD) provided.
-
-<img width="1284" alt="Screenshot 2023-07-10 at 12 35 42 PM" src="https://github.com/m-janssens-boop/Crowdfunding_ETL/assets/127706155/aa8a16aa-728e-4492-8bd6-c2c69140e092">
-
-- Created tables in PostgreSQL with appropriate data types, primary keys, foreign keys, and constraints.
-
-- Imported the CSV files into the respective database tables.
-
-- Ran SQL queries on the database to analyze the crowdfunding data.
-
-### References ###
+## References ###
 
 [line 5 reference](https://sparkbyexamples.com/pandas/pandas-split-column/#:~:text=In%20Pandas%2C%20the%20apply(),to%20split%20into%20two%20columns)
 
