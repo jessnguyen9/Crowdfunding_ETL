@@ -1,8 +1,7 @@
-# Crowdfunding_ETL
+# Crowdfunding Data Analysis & ETL Project
 
-Introduction
------------
-This project involves analyzing crowdfunding data from Excel files, creating dataframes, exporting the dataframes as CSV files, creating a PostgreSQL database schema based on an ERD and importing the CSV files into their corresponding tables.
+## Overview
+Conducted a thorough analysis of crowdfunding data, focusing on campaign performance, backer engagement, and funding success rates. The dataset, containing over 1,000 crowdfunding campaigns, was acquired from multiple sources, including Excel files. The project aimed to clean and transform the raw data, load it into a PostgreSQL database, and then analyze it to generate actionable insights for business stakeholders.
 
 ## Completed Tasks
 - Extracted and transformed data from the provided Excel files to create dataframes using Python and pandas.
